@@ -18,9 +18,12 @@ body {
     font-size: 26px;
     line-height: 31px;
     letter-spacing: 0.03em;
-    color: #2196F3;
+    color: #000;
     margin-top: 50px;
     text-decoration: none;
+    span {
+        color: #2196F3;
+    }
 }
 
 header {
@@ -35,9 +38,51 @@ header {
             list-style: none;
             justify-content: space-around;
             padding: 10px;
+            position: relative;
         }
         a {
             text-decoration: none;
+        }
+        .nav__routes {
+            display: flex;
+            flex-direction: row;
+            list-style: none;
+            padding: 10px;
+            justify-content: space-between;
+            justify-items: flex-start;
+        }
+        .nav__info {
+            display: flex;
+            flex-direction: row;
+            list-style: none;
+            padding: 10px;
+            justify-content: space-between;
+        }
+        .nav__item {
+            padding: 5px;
+        }
+        .nav__routes {
+            &:first-child {
+                &>li {
+                    &>a {
+                        color: #2196F3;
+                    }
+                }
+            }
+            li {
+                a {
+                    color: #000;
+                    padding: 10px;
+                }
+            }
+        }
+        .nav__info {
+            li {
+                 :first-child {
+                    color: #2196F3;
+                }
+                padding: 10px;
+            }
         }
     }
 }
@@ -115,36 +160,44 @@ main {
         list-style: none;
         display: flex;
         flex-direction: row;
-        justify-content: center;
+        justify-content: space-between;
         padding: 15px;
-        margin-bottom: 60px;
     }
     .worker_cards__item {
-        margin: 20px;
         border: black;
         background-color: white;
-        border-width: 1px;
-        box-shadow: 1px 1px #2F303A;
-        border-radius: 3px;
-        padding: 5px;
+        box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+        border-radius: 0px 0px 4px 4px;
     }
-    .item__name {
-        color: black;
-        text-align: center;
+    .worker_cards__info {
+        padding: 30px 60px;
+        p {
+            text-align: center;
+            padding: 5px;
+            &:first-of-type {
+                color: black;
+            }
+            &:last-of-type {
+                margin-top: 2px;
+            }
+        }
     }
-    .item__position {
-        text-align: center;
-        margin-top: 2px;
+    .main__info {
+        max-width: 1200px;
+        margin: 0 auto;
     }
 }
 
 footer {
+    height: fit-content;
+    margin-top: 60px;
     .nav__logo {
-        margin-bottom: 10px;
+        position: relative;
+        top: -15px;
+        color: #FFFF;
     }
     display: flex;
     background-color: #2F303A;
-    height: 250px;
     padding: 10px;
     .contact__container {
         left: 20px;
@@ -153,15 +206,16 @@ footer {
         justify-content: center;
         list-style: none;
         padding: 30px;
+        position: relative;
     }
     .contact__item {
         margin-top: 10px;
-    }
-    p {
-        color: white;
-        opacity: 60%;
-    }
-    #location {
-        color: #FFFF;
+        p {
+             :nth-child(1) {
+                color: #FFFF;
+            }
+            color: white;
+            opacity: 60%;
+        }
     }
 }

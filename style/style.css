@@ -18,9 +18,12 @@ body {
   font-size: 26px;
   line-height: 31px;
   letter-spacing: 0.03em;
-  color: #2196F3;
+  color: #000;
   margin-top: 50px;
   text-decoration: none;
+}
+.nav__logo span {
+  color: #2196F3;
 }
 
 header {
@@ -35,9 +38,41 @@ header nav .nav__container {
   list-style: none;
   justify-content: space-around;
   padding: 10px;
+  position: relative;
 }
 header nav a {
   text-decoration: none;
+}
+header nav .nav__routes {
+  display: flex;
+  flex-direction: row;
+  list-style: none;
+  padding: 10px;
+  justify-content: space-between;
+  justify-items: flex-start;
+}
+header nav .nav__info {
+  display: flex;
+  flex-direction: row;
+  list-style: none;
+  padding: 10px;
+  justify-content: space-between;
+}
+header nav .nav__item {
+  padding: 5px;
+}
+header nav .nav__routes:first-child > li > a {
+  color: #2196F3;
+}
+header nav .nav__routes li a {
+  color: #000;
+  padding: 10px;
+}
+header nav .nav__info li {
+  padding: 10px;
+}
+header nav .nav__info li :first-child {
+  color: #2196F3;
 }
 
 main {
@@ -111,39 +146,47 @@ main .worker_cards__container {
   list-style: none;
   display: flex;
   flex-direction: row;
-  justify-content: center;
+  justify-content: space-between;
   padding: 15px;
-  margin-bottom: 60px;
 }
 main .worker_cards__container img {
   width: 270px;
 }
 main .worker_cards__item {
-  margin: 20px;
   border: black;
   background-color: white;
-  border-width: 1px;
-  box-shadow: 1px 1px #2F303A;
-  border-radius: 3px;
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 0px 0px 4px 4px;
+}
+main .worker_cards__info {
+  padding: 30px 60px;
+}
+main .worker_cards__info p {
+  text-align: center;
   padding: 5px;
 }
-main .item__name {
+main .worker_cards__info p:first-of-type {
   color: black;
-  text-align: center;
 }
-main .item__position {
-  text-align: center;
+main .worker_cards__info p:last-of-type {
   margin-top: 2px;
+}
+main .main__info {
+  max-width: 1200px;
+  margin: 0 auto;
 }
 
 footer {
+  height: fit-content;
+  margin-top: 60px;
   display: flex;
   background-color: #2F303A;
-  height: 250px;
   padding: 10px;
 }
 footer .nav__logo {
-  margin-bottom: 10px;
+  position: relative;
+  top: -15px;
+  color: white;
 }
 footer .contact__container {
   left: 20px;
@@ -152,15 +195,16 @@ footer .contact__container {
   justify-content: center;
   list-style: none;
   padding: 30px;
+  position: relative;
 }
 footer .contact__item {
   margin-top: 10px;
 }
-footer p {
+footer .contact__item p {
   color: white;
   opacity: 60%;
 }
-footer #location {
+footer .contact__item p :nth-child(1) {
   color: white;
 }
 
