@@ -8,157 +8,157 @@
     <link rel="stylesheet" href="style/style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap" rel="stylesheet">
     <title>Document</title>
 </head>
 
 <body>
     <header>
-        <nav>
-            <ul class="nav__container">
-                <li class="nav__item">
-                    <a class="nav__logo" href="#">
+        <div class="nav">
+            <div class="nav__container container">
+                <div class="nav__wrapper">
+                    <a class="nav__logo logo" href="#">
                         <span>Web</span>Studio
                     </a>
-                </li>
 
-                <li>
                     <ul class="nav__routes">
                         <li class="nav__routes-item">
                             <a class="nav__routes-link" href="#">Студия</a>
                         </li>
 
-                        <li>
-                            <a href="#">Портфолио</a>
+                        <li class="nav__routes-item">
+                            <a class="nav__routes-link" href="#">Портфолио</a>
                         </li>
 
-                        <li>
-                            <a href="#">Контакты</a>
+                        <li class="nav__routes-item">
+                            <a class="nav__routes-link" href="#">Контакты</a>
                         </li>
                     </ul>
-                </li>
+                </div>
 
-                <li>
-                    <ul class="nav__info">
-                        <li>
-                            <a href="#">info@devstudio.com</a>
-                        </li>
+                <ul class="nav__info">
+                    <li class="nav__info-item">
+                        <a class="nav__info-link" href="#">info@devstudio.com</a>
+                    </li>
 
-                        <li>
-                            <a href="#">+38 096 111 11 11</a>
-                        </li>
-                    </ul>
-                </li>
-            </ul>
-        </nav>
+                    <li class="nav__info-item">
+                        <a class="nav__info-link" href="#">+38 096 111 11 11</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
     </header>
 
-    <main>
-        <div class="header__bottom">
-            <ul>
-                <li>
-                    <p class="header__bottom_item">Эффективные решения <br> для вашего бизнеса</p>
-                </li>
+    <main class="main">
+        <div class="banner">
+            <div class="banner__container container">
+                <p class="banner__title">Эффективные решения <br> для вашего бизнеса</p>
 
-                <li>
-                    <button class="header__bottom_button">
-                        Заказать услугу
-                    </button>
-                </li>
-            </ul>
+                <button class="banner__button">
+                    Заказать услугу
+                </button>
+            </div>
         </div>
 
-        <div class="main__info">
-            <ul class="info__container">
-                <li class="info__item">
-                    <h2>Внимание к деталям</h2>
-                    <p>Идейные соображения, а также начало повседневной работы по формированию позиции.</p>
-                </li>
-                <li class="info__item">
-                    <h2>Пунктуальность</h2>
-                    <p>Задача организации, в особенности же рамки и место обучения кадров влечет за собой.</p>
-                </li>
-                <li class="info__item">
-                    <h2>Планирование</h2>
-                    <p>Равным образом консультация с широким активом в значительной степени обуславливает.</p>
-                </li>
-                <li class="info__item">
-                    <h2>Современные технологии</h2>
-                    <p>Значимость этих проблем настолько очевидна, что реализация плановых заданий.</p>
-                </li>
-            </ul>
+        <div class="info">
+            <div class="info__container container">
+                <div class="info__item">
+                    <h2 class="info__item-title">Внимание к деталям</h2>
+                    <p class="info__item-text">Идейные соображения, а также начало повседневной работы по формированию позиции.</p>
+                </div>
+                <div class="info__item">
+                    <h2 class="info__item-title">Пунктуальность</h2>
+                    <p class="info__item-text">Задача организации, в особенности же рамки и место обучения кадров влечет за собой.</p>
+                </div>
+                <div class="info__item">
+                    <h2 class="info__item-title">Планирование</h2>
+                    <p class="info__item-text">Равным образом консультация с широким активом в значительной степени обуславливает.</p>
+                </div>
+                <div class="info__item">
+                    <h2 class="info__item-title">Современные технологии</h2>
+                    <p class="info__item-text">Значимость этих проблем настолько очевидна, что реализация плановых заданий.</p>
+                </div>
+            </div>
+        </div>
 
-            <h1 class="main__paragraph">Чем мы занимаемся</h1>
+        <div class="about">
+            <div class="about__container container">
+                <h1 class="title">Чем мы занимаемся</h1>
 
-            <ul class="images__container">
-                <li class="images__item">
-                    <img src="/images/1.png" alt="">
-                </li>
-                <li class="images__item">
-                    <img src="/images/2.png" alt="">
-                </li>
-                <li class="images__item">
-                    <img src="/images/3.png" alt="">
-                </li>
-            </ul>
+                <div class="about__pictures">
+                    <img class="about__pictures-img" src="/images/1.png" alt="" width="1" height="1">
 
-            <h1 class="main__paragraph">Наша команда</h1>
+                    <img class="about__pictures-img" src="/images/2.png" alt="" width="1" height="1">
 
-            <ul class="worker_cards__container">
-                <li class="worker_cards__item">
-                    <img src="/images/igor.jpg" alt="">
-                    <div class="worker_cards__info">
-                        <p>Игорь Демьяненко</p>
-                        <p>Product Designer</p>
-                    </div>
-                </li>
-                <li class="worker_cards__item">
-                    <img src="/images/olga.jpg" alt="">
-                    <div class="worker_cards__info">
-                        <p>Ольга Репина</p>
-                        <p>Frontend Developer</p>
-                    </div>
-                </li>
-                <li class="worker_cards__item">
-                    <img src="/images/nicola.jpg" alt="">
-                    <div class="worker_cards__info">
-                        <p>Николай Тарасов</p>
-                        <p>Marketing</p>
-                    </div>
-                </li>
-                <li class="worker_cards__item">
-                    <img src="/images/misha.jpg" alt="">
-                    <div class="worker_cards__info">
-                        <p>Михаил Ермаков</p>
-                        <p>UI Designer</p>
-                    </div>
-                </li>
-            </ul>
+                    <img class="about__pictures-img" src="/images/3.png" alt=" " width="1 " height="1">
+                </div>
+            </div>
 
         </div>
-    </main>
 
-    <footer>
-        <ul class="contact__container">
-            <li class="contact__item">
-                <a class="nav__logo" href="#">
+
+
+        <div class="team">
+            <div class="team__container container">
+                <h1 class="title">Наша команда</h1>
+
+                <div class="team__cards">
+                    <div class="card">
+                        <img class="card__img" src="/images/igor.jpg" alt="">
+                        <div class="card__description">
+                            <p class="card__name">Игорь Демьяненко</p>
+                            <p class="card__position">Product Designer</p>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <img class="card__img" src="/images/olga.jpg" alt="">
+                        <div class="card__description">
+                            <p class="card__name">Ольга Репина</p>
+                            <p class="card__position">Frontend Developer</p>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <img class="card__img" src="/images/nicola.jpg" alt="">
+                        <div class="card__description">
+                            <p class="card__name">Николай Тарасов</p>
+                            <p class="card__position">Marketing</p>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <img class="card__img" src="/images/misha.jpg" alt="">
+                        <div class="card__description">
+                            <p class="card__name">Михаил Ермаков</p>
+                            <p class="card__position">UI Designer</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+
+        <footer class="footer">
+            <div class="footer__container container">
+                <a class="footer__logo logo" href="#">
                     <span>Web</span>Studio
                 </a>
-            </li>
 
-            <li class="contact__item">
-                <p>г. Киев, пр-т Леси Украинки, 26</p>
-            </li>
+                <ul class="footer__list">
+                    <li class="footer__list-item">
+                        г. Киев, пр-т Леси Украинки, 26
+                    </li>
 
-            <li class="contact__item">
-                <p>info@example.com</p>
-            </li>
+                    <li class="footer__list-item">
+                        <p>info@example.com</p>
+                    </li>
 
-            <li class="contact__item">
-                <p>+38 099 111 11 11</p>
-            </li>
-        </ul>
-    </footer>
+                    <li class="footer__list-item">
+                        <p>+38 099 111 11 11</p>
+                    </li>
+                </ul>
+
+            </div>
+        </footer>
 </body>
 
 </html>
