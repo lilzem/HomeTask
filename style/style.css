@@ -82,6 +82,9 @@ header .nav__routes-link {
 header .nav__routes-link:hover {
   color: #2196F3;
 }
+header .nav__routes-link:active {
+  color: #2196F3;
+}
 header .nav__info {
   display: flex;
   flex-direction: row;
