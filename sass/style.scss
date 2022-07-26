@@ -13,7 +13,7 @@ a {
 }
 
 body {
-    background: #FFFF;
+    background: #E5E5E5;
     font-family: 'Roboto', sans-serif;
     font-size: 14px;
     font-weight: 400;
@@ -206,6 +206,7 @@ header {
 }
 
 .team {
+    background: #F5F4FA;
     &__container {
         display: flex;
         flex-direction: column;
@@ -308,13 +309,37 @@ header {
 
 .photocards {
     &__container {
-        margin-top: 94px;
-        display: flex;
-        justify-content: space-between;
-        flex-wrap: wrap;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 30px;
+        padding: 50px 0 94px 0;
+    }
+    &__image {
+        width: 100%;
+        height: 294px;
     }
     &__item {
         background: #FFFFFF;
         border: 1px solid #EEEEEE;
+        max-width: 370px;
+    }
+    &__description {
+        margin: 20px 0;
+        padding: 0 24px;
+    }
+    &__type {
+        margin-top: 4px;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 30px;
+        letter-spacing: 0.03em;
+        color: #757575;
+    }
+    &__name {
+        font-weight: 700;
+        font-size: 18px;
+        line-height: 36px;
+        letter-spacing: 0.06em;
+        color: #212121;
     }
 }

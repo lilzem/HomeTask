@@ -13,7 +13,7 @@ a {
 }
 
 body {
-  background: white;
+  background: #E5E5E5;
   font-family: "Roboto", sans-serif;
   font-size: 14px;
   font-weight: 400;
@@ -199,6 +199,9 @@ header .nav__info-link:hover {
   height: 294px;
 }
 
+.team {
+  background: #F5F4FA;
+}
 .team__container {
   display: flex;
   flex-direction: column;
@@ -297,14 +300,38 @@ header .nav__info-link:hover {
 }
 
 .photocards__container {
-  margin-top: 94px;
-  display: flex;
-  justify-content: space-between;
-  flex-wrap: wrap;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 30px;
+  padding: 50px 0 94px 0;
+}
+.photocards__image {
+  width: 100%;
+  height: 294px;
 }
 .photocards__item {
   background: #FFFFFF;
   border: 1px solid #EEEEEE;
+  max-width: 370px;
+}
+.photocards__description {
+  margin: 20px 0;
+  padding: 0 24px;
+}
+.photocards__type {
+  margin-top: 4px;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 30px;
+  letter-spacing: 0.03em;
+  color: #757575;
+}
+.photocards__name {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 36px;
+  letter-spacing: 0.06em;
+  color: #212121;
 }
 
 /*# sourceMappingURL=style.css.map */
