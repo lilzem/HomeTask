@@ -149,13 +149,22 @@ header .nav__info-item:hover svg path {
   background-color: #2196F3;
   color: white;
   border-radius: 4px;
+  border: none;
   padding: 15px 32px;
   width: max-content;
   text-align: center;
   font-size: 16px;
   font-weight: 700;
   margin-top: 35px;
-  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  transition: 0.3s;
+}
+.banner__button:hover {
+  background-color: #1a1aff;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.3);
+}
+.banner__button:active {
+  background-color: #000080;
 }
 
 .title {
@@ -251,6 +260,7 @@ header .nav__info-item:hover svg path {
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
   max-width: 270px;
+  width: 100%;
   margin-left: 30px;
 }
 .team__cards .card:first-child {
@@ -284,7 +294,7 @@ header .nav__info-item:hover svg path {
   align-items: center;
   width: 44px;
   height: 44px;
-  transition: 0.1s;
+  transition: 0.3s;
 }
 .team__cards .card__social-item:first-child {
   margin-left: 0;
