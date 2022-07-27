@@ -9,6 +9,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap" rel="stylesheet">
+    <script src="script.js" defer></script>
     <title>Document</title>
 </head>
 
@@ -64,9 +65,7 @@
 
                 <p class="banner__title">Эффективные решения <br> для вашего бизнеса</p>
 
-                <button class="banner__button">
-                    Заказать услугу
-                </button>
+                <button data-modal="#modal" class="banner__button modal-link">Заказать услугу</button>
             </div>
         </div>
 
@@ -556,6 +555,17 @@
                     </div>
                 </div>
         </footer>
+
+        <div id="modal" class="modal">
+            <div class="modal__body">
+                <div class="modal__content">
+                    <span class="modal__close close-modal">
+                        <img src="images/close.svg" alt="">
+                    </span>
+                </div>
+            </div>
+        </div>
 </body>
+
 
 </html>
