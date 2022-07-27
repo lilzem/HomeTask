@@ -84,7 +84,7 @@ header .nav__routes-link {
 header .nav__routes-link:hover {
   color: #2196F3;
 }
-header .nav__routes-link:hover:after {
+header .nav__routes-link::after {
   content: "";
   position: absolute;
   background: #2196F3;
@@ -94,6 +94,11 @@ header .nav__routes-link:hover:after {
   min-width: inherit;
   height: 4px;
   border-radius: 2px;
+  transition: 0.3s;
+  opacity: 0;
+}
+header .nav__routes-link:hover:after {
+  opacity: 1;
 }
 header .nav__info {
   display: flex;
@@ -249,6 +254,29 @@ header .nav__info-item:hover svg path {
   margin: 20px;
   width: 370px;
   height: 294px;
+}
+.about__pictures__container {
+  position: relative;
+}
+.about__pictures__title {
+  position: absolute;
+  bottom: 23px;
+  left: 20px;
+  width: 370px;
+  background: rgba(47, 48, 58, 0.8);
+}
+.about__pictures__title-item {
+  padding: 27px 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 16px;
+  text-align: center;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: #FFFFFF;
 }
 
 .team {

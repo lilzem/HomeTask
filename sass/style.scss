@@ -83,7 +83,7 @@ header {
             &-link:hover {
                 color: #2196F3;
             }
-            &-link:hover:after {
+            &-link::after {
                 content: '';
                 position: absolute;
                 background: #2196F3;
@@ -93,6 +93,11 @@ header {
                 min-width: inherit;
                 height: 4px;
                 border-radius: 2px;
+                transition: 0.3s;
+                opacity: 0;
+            }
+            &-link:hover:after {
+                opacity: 1;
             }
         }
         &__info {
@@ -257,6 +262,29 @@ header {
             margin: 20px;
             width: 370px;
             height: 294px;
+        }
+        &__container {
+            position: relative;
+        }
+        &__title {
+            position: absolute;
+            bottom: 23px;
+            left: 20px;
+            width: 370px;
+            background: rgba(47, 48, 58, 0.8);
+            &-item {
+                padding: 27px 0;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                font-weight: 700;
+                font-size: 14px;
+                line-height: 16px;
+                text-align: center;
+                letter-spacing: 0.03em;
+                text-transform: uppercase;
+                color: #FFFFFF;
+            }
         }
     }
 }
