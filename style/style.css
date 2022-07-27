@@ -78,10 +78,22 @@ header .nav__routes-item:first-child {
 header .nav__routes-link {
   font-weight: 500;
   color: #212121;
-  transition: 0.1s;
+  transition: 0.3s;
+  position: relative;
 }
 header .nav__routes-link:hover {
   color: #2196F3;
+}
+header .nav__routes-link:hover:after {
+  content: "";
+  position: absolute;
+  background: #2196F3;
+  width: 100%;
+  bottom: -28px;
+  left: 0;
+  min-width: inherit;
+  height: 4px;
+  border-radius: 2px;
 }
 header .nav__info {
   display: flex;
@@ -93,7 +105,6 @@ header .nav__info-item {
   display: flex;
   align-items: center;
   padding-left: 50px;
-  transition: 0.1s;
 }
 header .nav__info-item:first-child {
   padding: 0;
@@ -102,6 +113,7 @@ header .nav__info-link {
   font-weight: 500;
   color: #212121;
   margin-left: 10px;
+  transition: 0.3s;
 }
 header .nav__info-item:hover a {
   color: #2196F3;
@@ -337,6 +349,9 @@ header .nav__info-item:hover svg path {
 .clients-item:first-child {
   margin-left: 0;
 }
+.clients-item svg path {
+  transition: 0.3s;
+}
 .clients-item:hover {
   border: 1px solid #2196F3;
 }
@@ -398,7 +413,7 @@ header .nav__info-item:hover svg path {
   background: rgba(255, 255, 255, 0.1);
   border-radius: 50%;
   margin-left: 10px;
-  transition: 0.1s;
+  transition: 0.3s;
 }
 .footer__social-item:first-child {
   margin-left: 0;
@@ -494,7 +509,11 @@ header .nav__info-item:hover svg path {
   width: 528px;
   height: 581px;
   background: white;
-  padding: 40px;
+}
+.modal__close {
+  display: flex;
+  justify-content: flex-end;
+  padding: 8px;
 }
 
 @keyframes showModal {
