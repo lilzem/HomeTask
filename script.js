@@ -1,3 +1,5 @@
+//modal-start
+
 document.querySelectorAll('.modal-link').forEach((element) => {
     element.addEventListener('click', () => {
         modalOpen(element.dataset.modal);
@@ -45,7 +47,7 @@ function modalCloseByElement(modal, unlock = true) {
         return;
     }
 
-    animateModelHiding(modal, () => modal.classList.remove('open'));
+    animateModalHiding(modal, () => modal.classList.remove('open'));
 
     if (!unlock) {
         return;
@@ -62,7 +64,7 @@ function unlockBody() {
     document.body.classList.remove('lock');
 }
 
-function animateModelHiding(modal, callback = null) {
+function animateModalHiding(modal, callback = null) {
     if (!modal) {
         return;
     }
@@ -85,3 +87,62 @@ function animateModelHiding(modal, callback = null) {
 
     setTimeout(callback, duration);
 }
+
+//modal-end
+
+//burger_menu-start
+
+document.querySelector('.nav__burger').addEventListener('click', (e) => {
+    toggleNav(e.target.dataset.menu);
+});
+
+function toggleNav(menuId) {
+    const menu = document.querySelector(menuId);
+
+    if (!menu) {
+        return;
+    }
+
+    const bOpened = menu.classList.contains('show');
+
+    if (bOpened) {
+        animateNavHiding(menu, () => hideNav(menu));
+
+    } else {
+        showNav(menu);
+    }
+}
+
+function showNav(menu) {
+    menu.classList.add('show');
+}
+
+function hideNav(menu) {
+    menu.classList.remove('show');
+}
+
+function animateNavHiding(menu, callback = null) {
+
+    const duration = 300;
+
+    menu.animate([{
+            transform: 'scaleY(1)'
+        },
+        {
+            transform: 'scaleY(1.1)'
+        },
+        {
+            transform: 'scaleY(0)'
+        }
+    ], {
+        duration
+    });
+
+    if (!callback) {
+        return;
+    }
+
+    setTimeout(callback, duration);
+}
+
+//burger_menu-end

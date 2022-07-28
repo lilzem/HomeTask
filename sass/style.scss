@@ -46,6 +46,98 @@ header {
     border: 1px solid #ECECEC;
     background-color: white;
     .nav {
+        &__side {
+            &--animated {}
+            border: 1px solid #ECECEC;
+            display: flex;
+            flex-direction: column;
+            padding: 20px 0;
+            justify-content: center;
+            align-items: center;
+            &__routes {
+                text-align: center;
+                width: 100%;
+                &-item {
+                    padding: 20px 0;
+                    width: 100%;
+                }
+                &-link {
+                    display: flex;
+                    width: 100%;
+                    justify-content: center;
+                    font-weight: 500;
+                    color: #212121;
+                    transition: 0.3s;
+                    position: relative;
+                }
+                &-link:hover {
+                    color: #2196F3;
+                }
+                &-link::after {
+                    content: '';
+                    position: absolute;
+                    background: #2196F3;
+                    width: 100%;
+                    bottom: -20px;
+                    left: 0;
+                    min-width: inherit;
+                    height: 4px;
+                    border-radius: 2px;
+                    transition: 0.3s;
+                    opacity: 0;
+                }
+                &-link:hover:after {
+                    opacity: 1;
+                }
+            }
+            &__info {
+                width: 100%;
+                &-item {
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    padding: 20px 0;
+                    position: relative;
+                    width: 100%;
+                }
+                &-link {
+                    font-weight: 500;
+                    color: #212121;
+                    margin-left: 10px;
+                    transition: 0.3s;
+                }
+                &-item:hover {
+                    a {
+                        color: #2196F3;
+                    }
+                    svg {
+                        path {
+                            fill: #2196F3;
+                        }
+                    }
+                }
+                &-item::after {
+                    content: '';
+                    position: absolute;
+                    background: #2196F3;
+                    width: 100%;
+                    bottom: 0;
+                    left: 0;
+                    min-width: inherit;
+                    height: 4px;
+                    border-radius: 2px;
+                    transition: 0.3s;
+                    opacity: 0;
+                }
+                &-item:hover:after {
+                    opacity: 1;
+                }
+            }
+        }
+        &__side.show {
+            display: flex;
+            animation: growDown 300ms ease-in-out forwards
+        }
         &__wrapper {
             max-width: calc(320px + 68px + 145px);
             width: 100%;
@@ -130,6 +222,64 @@ header {
                 }
             }
         }
+        &__burger {
+            position: relative;
+            display: flex;
+            flex-direction: column;
+            cursor: pointer;
+            display: none;
+            padding: 8px 15px;
+            margin-top: 0px;
+            &-line {
+                width: 30px;
+                padding: 2px 0;
+                background: #000;
+                margin-top: 4px;
+                &:first-child {
+                    margin-top: 0;
+                }
+                border-radius: 4px;
+                transition: 0.3s;
+            }
+        }
+        &__burger::after {
+            content: '';
+            display: none;
+        }
+        &__burger:hover {
+            div {
+                background: #2196F3;
+            }
+        }
+        @media (max-width: 768px) {
+            .logo {
+                padding: 0 15px;
+            }
+            &__burger {
+                display: block;
+            }
+            &__routes {
+                display: none;
+            }
+            &__info {
+                display: none;
+            }
+            &__side {
+                display: none;
+            }
+        }
+    }
+}
+
+@keyframes growDown {
+    0% {
+        transform: scaleY(0)
+    }
+    80% {
+        transform: scaleY(1.1)
+    }
+    100% {
+        transform: scaleY(1)
     }
 }
 
