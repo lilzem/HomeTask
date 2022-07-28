@@ -47,9 +47,8 @@ header {
     background-color: white;
     .nav {
         &__side {
-            &--animated {}
             border: 1px solid #ECECEC;
-            display: flex;
+            display: none;
             flex-direction: column;
             padding: 20px 0;
             justify-content: center;
@@ -60,6 +59,10 @@ header {
                 &-item {
                     padding: 20px 0;
                     width: 100%;
+                    &:first-child {
+                        padding: 0 0 20px 0;
+                        text-align: center;
+                    }
                 }
                 &-link {
                     display: flex;
@@ -70,7 +73,7 @@ header {
                     transition: 0.3s;
                     position: relative;
                 }
-                &-link:hover {
+                &-link:active {
                     color: #2196F3;
                 }
                 &-link::after {
@@ -86,7 +89,7 @@ header {
                     transition: 0.3s;
                     opacity: 0;
                 }
-                &-link:hover:after {
+                &-link:active:after {
                     opacity: 1;
                 }
             }
@@ -99,6 +102,12 @@ header {
                     padding: 20px 0;
                     position: relative;
                     width: 100%;
+                    &:last-child {
+                        padding: 20px 0 0 0;
+                    }
+                    &:last-child:active:after {
+                        bottom: -22px;
+                    }
                 }
                 &-link {
                     font-weight: 500;
@@ -106,7 +115,7 @@ header {
                     margin-left: 10px;
                     transition: 0.3s;
                 }
-                &-item:hover {
+                &-item:active {
                     a {
                         color: #2196F3;
                     }
@@ -116,7 +125,7 @@ header {
                         }
                     }
                 }
-                &-item::after {
+                &-item:active:after {
                     content: '';
                     position: absolute;
                     background: #2196F3;

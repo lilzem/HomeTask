@@ -48,7 +48,7 @@ header {
 }
 header .nav__side {
   border: 1px solid #ECECEC;
-  display: flex;
+  display: none;
   flex-direction: column;
   padding: 20px 0;
   justify-content: center;
@@ -62,6 +62,10 @@ header .nav__side__routes-item {
   padding: 20px 0;
   width: 100%;
 }
+header .nav__side__routes-item:first-child {
+  padding: 0 0 20px 0;
+  text-align: center;
+}
 header .nav__side__routes-link {
   display: flex;
   width: 100%;
@@ -71,7 +75,7 @@ header .nav__side__routes-link {
   transition: 0.3s;
   position: relative;
 }
-header .nav__side__routes-link:hover {
+header .nav__side__routes-link:active {
   color: #2196F3;
 }
 header .nav__side__routes-link::after {
@@ -87,7 +91,7 @@ header .nav__side__routes-link::after {
   transition: 0.3s;
   opacity: 0;
 }
-header .nav__side__routes-link:hover:after {
+header .nav__side__routes-link:active:after {
   opacity: 1;
 }
 header .nav__side__info {
@@ -101,19 +105,25 @@ header .nav__side__info-item {
   position: relative;
   width: 100%;
 }
+header .nav__side__info-item:last-child {
+  padding: 20px 0 0 0;
+}
+header .nav__side__info-item:last-child:active:after {
+  bottom: -22px;
+}
 header .nav__side__info-link {
   font-weight: 500;
   color: #212121;
   margin-left: 10px;
   transition: 0.3s;
 }
-header .nav__side__info-item:hover a {
+header .nav__side__info-item:active a {
   color: #2196F3;
 }
-header .nav__side__info-item:hover svg path {
+header .nav__side__info-item:active svg path {
   fill: #2196F3;
 }
-header .nav__side__info-item::after {
+header .nav__side__info-item:active:after {
   content: "";
   position: absolute;
   background: #2196F3;
