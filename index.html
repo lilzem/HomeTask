@@ -65,7 +65,7 @@
 
                 <p class="banner__title">Эффективные решения <br> для вашего бизнеса</p>
 
-                <button data-modal="#modal" class="banner__button modal-link">Заказать услугу</button>
+                <button data-modal="#modal" class="banner__button button modal-link">Заказать услугу</button>
             </div>
         </div>
 
@@ -567,6 +567,17 @@
                         </div>
                     </div>
                 </div>
+
+                <div class="footer__send">
+                    <p class="footer__send-title">Подпишитесь на рассылку</p>
+
+                    <div class="footer__group">
+                        <input placeholder="E-mail" type="e-mail" class="footer__group-input">
+
+                        <img class="footer__group-icon" src="images/send.svg" alt="">
+                        <button class="footer__group-button button">Подписаться</button>
+                    </div>
+                </div>
         </footer>
 
         <div id="modal" class="modal">
@@ -575,6 +586,68 @@
                     <span class="modal__close close-modal">
                         <img src="images/close.svg" alt="">
                     </span>
+                    <div class="modal__container">
+                        <p class="modal__title">Оставьте свои данные, мы вам перезвоним</p>
+
+                        <div class="modal__input__group">
+                            <p class="modal__input__group-name">Имя</p>
+
+                            <i class="modal__input__group-icon">
+                                <svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M6 6C7.6575 6 9 4.6575 9 3C9 1.3425 7.6575 0 6 0C4.3425 0 3 1.3425 3 3C3 4.6575 4.3425 6 6 6ZM6 7.5C3.9975 7.5 0 8.505 0 10.5V11.25C0 11.6625 0.3375 12 0.75 12H11.25C11.6625 12 12 11.6625 12 11.25V10.5C12 8.505 8.0025 7.5 6 7.5Z" fill="#212121"/>
+                                </svg>
+                            </i>
+
+                            <input type="text" class="modal__input">
+                        </div>
+
+
+                        <div class="modal__input__group">
+                            <p class="modal__input__group-name">Телефон</p>
+
+                            <i class="modal__input__group-icon">
+                                <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M11.996 9.12256L10.1579 8.91269C9.71641 8.86203 9.2822 9.01401 8.97102 9.32519L7.63945 10.6568C5.59144 9.61466 3.91251 7.94296 2.87041 5.8877L4.20922 4.54888C4.5204 4.2377 4.67237 3.80349 4.62171 3.36205L4.41185 1.53836C4.325 0.807445 3.70988 0.257446 2.97173 0.257446H1.71976C0.902004 0.257446 0.221746 0.937708 0.272403 1.75547C0.655953 7.93572 5.59868 12.8712 11.7717 13.2548C12.5894 13.3054 13.2697 12.6252 13.2697 11.8074V10.5555C13.2769 9.82453 12.7269 9.2094 11.996 9.12256Z" fill="#212121"/>
+                                </svg>
+                            </i>
+
+                            <input type="text" class="modal__input">
+                        </div>
+
+                        <div class="modal__input__group">
+                            <p class="modal__input__group-name">Почта</p>
+
+                            <i class="modal__input__group-icon">
+                                <svg width="16" height="12" viewBox="0 0 16 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M14 0H2C1.175 0 0.5075 0.675 0.5075 1.5L0.5 10.5C0.5 11.325 1.175 12 2 12H14C14.825 12 15.5 11.325 15.5 10.5V1.5C15.5 0.675 14.825 0 14 0ZM13.7 3.1875L8.3975 6.5025C8.1575 6.6525 7.8425 6.6525 7.6025 6.5025L2.3 3.1875C2.1125 3.0675 2 2.865 2 2.6475C2 2.145 2.5475 1.845 2.975 2.1075L8 5.25L13.025 2.1075C13.4525 1.845 14 2.145 14 2.6475C14 2.865 13.8875 3.0675 13.7 3.1875Z" fill="#212121"/>
+                                </svg>
+                            </i>
+
+                            <input type="text" class="modal__input">
+                        </div>
+
+                        <p class="modal__input__group-name">Комментарий</p>
+
+                        <textarea placeholder="Введите текст" class="modal__textarea" name="" id="" cols="30" rows="10"></textarea>
+
+                        <div class="modal__checkbox__group">
+                            <i class="modal__checkbox__group-checked">
+                                <svg  width="13" height="10" viewBox="0 0 13 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M1.95703 4.75166L1.88825 4.68604L1.81923 4.75141L0.93123 5.59258L0.854858 5.66492L0.930974 5.73753L4.42671 9.07236L4.49574 9.1382L4.56476 9.07236L12.069 1.91352L12.1449 1.84116L12.069 1.76881L11.1873 0.927644L11.1183 0.861826L11.0493 0.927611L4.49577 7.17353L1.95703 4.75166Z" fill="white" stroke="white" stroke-width="0.2"/>
+                                </svg>
+                            </i>
+                            <i class="modal__checkbox__group-unchecked">
+                                <svg width="16" height="15" viewBox="0 0 16 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M14.2222 1.66667V13.3333H1.77778V1.66667H14.2222ZM14.2222 0H1.77778C0.8 0 0 0.75 0 1.66667V13.3333C0 14.25 0.8 15 1.77778 15H14.2222C15.2 15 16 14.25 16 13.3333V1.66667C16 0.75 15.2 0 14.2222 0Z" fill="#212121"/>
+                                </svg>
+                            </i>
+                            <p class="modal__checkbox__group-text">Соглашаюсь с рассылкой и принимаю <a class="modal__checkbox__group-link">Условия договора</a></p>
+                        </div>
+
+                        <button class="button modal__button">Заказать услугу</button>
+                    </div>
+
+
                 </div>
             </div>
         </div>
