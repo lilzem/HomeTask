@@ -801,6 +801,14 @@ header {
         justify-content: center;
         align-items: center;
         margin-top: 20px;
+        &-item {
+            background: #212121;
+            width: 15px;
+            height: 16px;
+            border: 1px solid rgba(33, 33, 33, 0.2);
+            border-radius: 4px;
+            padding: 4px 3px 2px 3px;
+        }
         &-text {
             margin-left: 8px;
             font-weight: 400;
